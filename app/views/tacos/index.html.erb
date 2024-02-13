@@ -1,8 +1,13 @@
-<h1>Tacos Live Here</h1>
+<h1>Welcome Destiny Enthusiasts</h1>
 
-<p>Welcome.</p>
+<p>Looking forward to witnessing your light, members of the Uncrwnd</p>
+
+<% armor = ["Tesseract Tau", "Malificarum", "Mjolnir", "Mithral"] %>
+
+<p>We have <%= armor.count %> armor sets.</p>
 
 <ul>
-<li>Carnitas</li>
-<li>Pescado
-<li>Carne asada</li>
+  <% for armor in armor%>
+    <li><%=armor%><li>
+  <% end %>
+<ul>
