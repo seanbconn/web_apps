@@ -1,0 +1,12 @@
+<h1>Companies Page</h1>
+
+<% companies = Company.all%>
+
+<p> There are <%= companies.count %> in our table </p>
+
+<p> The names are</p>
+<ul>
+  <% for company in companies %>
+    <li><%= company.name %></li>
+  <% end %>
+</ul>
