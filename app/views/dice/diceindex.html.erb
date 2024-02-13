@@ -1,0 +1,13 @@
+<h1>Let's Play Dice</h1>
+
+<p>You have two independent die and the combined value paired role is below</p>
+
+<% armor = ["Tesseract Tau", "Malificarum", "Mjolnir", "Mithral"] %>
+
+<p>We have <%= armor.count %> armor sets.</p>
+
+<ul>
+  <% for armor in armor%>
+    <li><%=armor%><li>
+  <% end %>
+<ul>
